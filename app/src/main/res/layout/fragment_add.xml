@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:id="@+id/tv_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Formulir Data"
+           android:textSize="24sp"
+           android:textStyle="bold"
+           android:layout_marginTop="70dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <TextView
+           android:id="@+id/tv_namaLengkap"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Nama Lengkap"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           android:layout_marginLeft="50dp"
+           android:layout_marginTop="50dp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+       <EditText
+           android:id="@+id/edt_namaLengkap"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="50dp"
+           android:hint="Masukkan nama Lengkap anda"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/tv_namaLengkap" />
+
+       <TextView
+           android:id="@+id/tv_namaOrtu"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Nama Orang Tua"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           android:layout_marginLeft="50dp"
+           android:layout_marginTop="10dp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/edt_namaLengkap" />
+
+       <EditText
+           android:id="@+id/edt_namaOrtu"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="50dp"
+           android:hint="Masukkan nama orang tua anda"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/tv_namaOrtu" />
+
+       <Button
+           android:id="@+id/btn_simpan"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Simpan"
+           android:textColor="#1C149A"
+           android:backgroundTint="#19C4C0"
+           android:layout_marginTop="50dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/edt_namaOrtu" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
